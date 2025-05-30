@@ -70,6 +70,67 @@ class _AddExpenseState extends State<AddExpense> {
                     size: 16, 
                     color: Colors.grey,
                   ),
+                  suffixIcon: IconButton(
+                    onPressed: () {
+                      showDialog(
+                        context: context, 
+                        builder: (ctx) {
+                          return AlertDialog(
+                            content: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                TextFormField( 
+                                  textAlignVertical: TextAlignVertical.center,
+                                  decoration: InputDecoration(
+                                    filled: true,
+                                    fillColor: Colors.white,
+                                    hintText: 'Category Name',
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(12),
+                                      borderSide: BorderSide.none,
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(height: 16.0,),
+                                TextFormField( 
+                                  //readOnly: true,
+                                  textAlignVertical: TextAlignVertical.center,
+                                  decoration: InputDecoration(
+                                    filled: true,
+                                    fillColor: Colors.white,
+                                    hintText: 'Icon',
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(12),
+                                      borderSide: BorderSide.none,
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(height: 16.0,),
+                                TextFormField( 
+                                  //readOnly: true,
+                                  textAlignVertical: TextAlignVertical.center,
+                                  decoration: InputDecoration(
+                                    filled: true,
+                                    fillColor: Colors.white,
+                                    hintText: 'Color',
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(12),
+                                      borderSide: BorderSide.none,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            )
+                          );
+                        }
+                      );
+                    }, 
+                    icon: Icon(
+                      FontAwesomeIcons.plus, 
+                      size: 16, 
+                      color: Colors.grey,
+                    ),
+                  ), 
                   hintText: 'Category',
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(30),
