@@ -17,6 +17,15 @@ dependencies:
   flutter_colorpicker: ^1.0.3
   uuid: ^4.3.3
 
+  firebase_core: ^2.16.0
+
+  bloc: ^9.0.0
+  flutter_bloc: ^9.1.1
+  equatable: ^2.0.5
+
+  expense_repository:
+    path: packages/expense_repository
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
